@@ -324,7 +324,7 @@ h.forest <- function(k, snp.var, t.lab, rlist, res, side, level, p.adj, digits)
 				, NA, CI.str[null], NA, NA, CI.str[pos], NA, CI0.str, CI1.str)
 
 	if(side == 1) CI.vec <- c(CI.vec, CI2.str)
-	else CI.vec <- c(CI.vec, c(NA, CI2.1.str, CI2.1.str))
+	else CI.vec <- c(CI.vec, c(NA, CI2.1.str, CI2.2.str))
 
 	tabletext <- cbind(pheno.col, c("OR", round(mid, digits=digits))
 					   , rep("", length(mid) + 1)
